@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Surprise for Cumtu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Section 6: Countdown -->
+  <section class="countdown-section-modern">
+    <h2 class="countdown-title">Countdown to my cumtusss special dayy</h2>
+    <div class="countdown-boxes">
+      <div class="count-box"><div id="days">00</div><span>days</span></div>
+      <div class="count-box"><div id="hours">00</div><span>hrs</span></div>
+      <div class="count-box"><div id="minutes">00</div><span>min</span></div>
+      <div class="count-box"><div id="seconds">00</div><span>sec</span></div>
+    </div>
+    <p class="countdown-sub">I hope you like it beba 💖</p>
+  </section>
+
+  <!-- Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    Made in love by <strong>Bhal</strong> 💌
+  </footer>
+
+  <!-- Countdown Script -->
+  <script>
+    function updateCountdown() {
+      const target = new Date("July 19, 2025 00:00:00 GMT+0530");
+      const now = new Date();
+      const diff = target - now;
+
+      if (diff <= 0) {
+        document.querySelector(".countdown-boxes").innerHTML = "It's her special day! 🎉";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").innerText = String(days).padStart(2, '0');
+      document.getElementById("hours").innerText = String(hrs).padStart(2, '0');
+      document.getElementById("minutes").innerText = String(mins).padStart(2, '0');
+      document.getElementById("seconds").innerText = String(secs).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
