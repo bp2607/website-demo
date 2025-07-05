@@ -1,61 +1,245 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Birthday Surprise for Cumtu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhal ❤️ Cumtu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Divider -->
-  <div class="section-divider"></div>
 
-  <!-- Section 6: Countdown -->
-  <section class="countdown-section-modern">
-    <h2 class="countdown-title">Countdown to my cumtusss special dayy</h2>
-    <div class="countdown-boxes">
-      <div class="count-box"><div id="days">00</div><span>days</span></div>
-      <div class="count-box"><div id="hours">00</div><span>hrs</span></div>
-      <div class="count-box"><div id="minutes">00</div><span>min</span></div>
-      <div class="count-box"><div id="seconds">00</div><span>sec</span></div>
+  <!-- Section 1: Title -->
+  <section class="hero">
+    <div class="title-wrapper">
+      <h1>
+        Turn our memories into moments you’ll 
+        <span class="highlight">never forget</span>.
+      </h1>
+      <h2 class="subtitle">Start celebrating your birthday magic, Cumtu 🎂✨</h2>
     </div>
-    <p class="countdown-sub">I hope you like it beba 💖</p>
   </section>
 
-  <!-- Divider -->
   <div class="section-divider"></div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    Made in love by <strong>Bhal</strong> 💌
-  </footer>
+  <!-- Section 2: Collage -->
+  <section class="collage">
+    <div class="collage-wrapper">
+      <div class="image-card" style="top: 0; left: 0; transform: rotate(-2deg);">
+        <img src="https://i.ibb.co/ym29tkcz/IMG-0549.jpg" alt="Image 1" />
+        <div class="caption">Maza sundar bal</div>
+      </div>
+      <div class="image-card" style="top: 0; left: 33%; transform: rotate(1.5deg);">
+        <img src="https://i.ibb.co/79qwpVw/IMG-2027.jpg" alt="Image 2" />
+        <div class="caption">Maza golaaaa</div>
+      </div>
+      <div class="image-card" style="top: 0; left: 66%; transform: rotate(-1deg);">
+        <img src="https://i.ibb.co/gb5HyRjK/IMG-0389.jpg" alt="Image 3" />
+        <div class="caption">My cumtuuu pieee</div>
+      </div>
 
-  <!-- Countdown Script -->
-  <script>
-    function updateCountdown() {
-      const target = new Date("July 19, 2025 00:00:00 GMT+0530");
-      const now = new Date();
-      const diff = target - now;
+      <div class="image-card" style="top: 50%; left: 0; transform: rotate(2deg);">
+        <img src="https://i.ibb.co/hJvDGBKK/IMG-0098.jpg" alt="Image 4" />
+        <div class="caption">Love of my lifeee</div>
+      </div>
+      <div class="image-card" style="top: 50%; left: 33%; transform: rotate(-1deg);">
+        <img src="https://i.ibb.co/b5q4xpL1/IMG-8920.jpg" alt="Image 5" />
+        <div class="caption">Reason of my existence</div>
+      </div>
+      <div class="image-card" style="top: 50%; left: 66%; transform: rotate(1deg);">
+        <img src="https://i.ibb.co/D6PVh0k/IMG-0457.jpg" alt="Image 6" />
+        <div class="caption">Sweetu</div>
+      </div>
+    </div>
+  </section>
 
-      if (diff <= 0) {
-        document.querySelector(".countdown-boxes").innerHTML = "It's her special day! 🎉";
-        return;
-      }
+  <div class="section-divider"></div>
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const mins = Math.floor((diff / (1000 * 60)) % 60);
-      const secs = Math.floor((diff / 1000) % 60);
+  <!-- Section 3: Message -->
+  <section class="message-day">
+    <h2 class="message-title">Message for the <span>day</span></h2>
+    <div class="message-box">
+      <p>
+        <span class="quote-mark">“</span>
+        You are the sunshine to my sleepy mornings, Cumtu 💛
+        <span class="quote-mark">”</span>
+      </p>
+    </div>
+  </section>
 
-      document.getElementById("days").innerText = String(days).padStart(2, '0');
-      document.getElementById("hours").innerText = String(hrs).padStart(2, '0');
-      document.getElementById("minutes").innerText = String(mins).padStart(2, '0');
-      document.getElementById("seconds").innerText = String(secs).padStart(2, '0');
-    }
+  <div class="section-divider"></div>
 
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
+  <!-- Section 4: Timeline -->
+  <section class="timeline-section">
+    <div class="timeline-title">Our <span>memories:</span> The Season of Firsts</div>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+
+      <!-- Each timeline item -->
+      <!-- You can copy and change the content as needed -->
+      <div class="timeline-item left">
+        <div class="content">
+          <div class="date">Apr 24</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> trip together</div>
+            <img src="https://i.ibb.co/TMfTxjqs/IMG-7988.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="content">
+          <div class="date">May 24</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> few stayovers</div>
+            <img src="https://i.ibb.co/bjhRvvfX/IMG-8116.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="content">
+          <div class="date">Jun 24</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> Goa trip</div>
+            <img src="https://i.ibb.co/S4hrMB4K/IMG-8175.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="content">
+          <div class="date">Jul 24</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> birthday together</div>
+            <img src="https://i.ibb.co/yBfFqQXS/IMG-8426.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="content">
+          <div class="date">Oct 24</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> Navratri</div>
+            <img src="https://i.ibb.co/VY7NgVrK/IMG-8668.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="content">
+          <div class="date">Oct 24</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> proposal</div>
+            <img src="https://i.ibb.co/bgs51xDH/9b54b6ba-59ed-4642-887c-32f594adcf01.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="content">
+          <div class="date">Nov 24</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> Rajasthan trip</div>
+            <img src="https://i.ibb.co/Cs0WBV3T/IMG-2059.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="content">
+          <div class="date">Jan 25</div>
+          <div class="row">
+            <div class="message">Prep for our <span class="highlighted">first</span> and last long distance</div>
+            <img src="https://i.ibb.co/YBwPgF6N/IMG-0069.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="content">
+          <div class="date">Feb 25</div>
+          <div class="row">
+            <div class="message">Our <span class="highlighted">first</span> int'l trip and many more to come</div>
+            <img src="https://i.ibb.co/qSPVTKp/IMG-0253.jpg" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 </html>
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- Section 5: Video -->
+<section class="video-section">
+  <h2 class="video-title">
+    One More Thing You Didn’t Ask For <span>(But Will Love Anyway)...Main video coming later</span>
+  </h2>
+  <div class="video-wrapper">
+    <iframe 
+      src="https://www.youtube.com/embed/K2aJTT29ZdU?autoplay=1&mute=1&rel=0"
+      title="Birthday Surprise Video"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- Section 6: Countdown -->
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- Section 6: Countdown -->
+<section class="countdown-section-modern">
+  <h2 class="countdown-title">Countdown to my cumtusss special dayy</h2>
+  <div class="countdown-boxes">
+    <div class="count-box"><div id="days">00</div><span>days</span></div>
+    <div class="count-box"><div id="hours">00</div><span>hrs</span></div>
+    <div class="count-box"><div id="minutes">00</div><span>min</span></div>
+    <div class="count-box"><div id="seconds">00</div><span>sec</span></div>
+  </div>
+  <p class="countdown-sub">I hope you like it beba 💖</p>
+</section>
+
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- Footer -->
+<footer class="footer">
+  Made in love by <strong>Bhal</strong> 💌
+</footer>
+
+<!-- Countdown Script -->
+<script>
+  function updateCountdown() {
+    const target = new Date("July 19, 2025 00:00:00 GMT+0530");
+    const now = new Date();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      document.querySelector(".countdown-boxes").innerHTML = "It's her special day! 🎉";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("days").innerText = String(days).padStart(2, '0');
+    document.getElementById("hours").innerText = String(hrs).padStart(2, '0');
+    document.getElementById("minutes").innerText = String(mins).padStart(2, '0');
+    document.getElementById("seconds").innerText = String(secs).padStart(2, '0');
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
