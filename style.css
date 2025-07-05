@@ -1,17 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fefaf6;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(to right, #f4e7d9, #f4e1cd);
+  background-image:
+    linear-gradient(to right, rgba(200, 150, 120, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200, 150, 120, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: #1d1d1d;
 }
 
+/* Section 1: Title */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  text-align: center;
+  background: inherit;
+}
+
+.title-wrapper {
+  max-width: 850px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  background-color: #e5bcae;
+  padding: 0 0.4rem;
+  border-radius: 4px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #3b3b3b;
+  margin-bottom: 1rem;
+}
+
+/* Divider Line */
 .section-divider {
-  border-top: 1px solid #f1e4d8;
-  margin: 3rem auto;
-  width: 60%;
+  width: 90%;
+  height: 1px;
+  margin: 1rem auto;
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
-/* Countdown Modern */
+/* Section 2: Collage */
+.collage {
+  position: relative;
+  padding: 2rem 2rem 4rem;
+  background: inherit;
+}
+
+.collage-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 700px;
+}
+
+.image-card {
+  position: absolute;
+  width: 30%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.image-card img {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #f0cfc7;
+}
+
+.caption {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff0e6;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* Section 3: Message for the Day */
+.message-day {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: inherit;
+}
+
+.message-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+.message-title span {
+  color: #c8826d;
+  font-weight: 700;
+}
+
+.message-box {
+  background-color: #ffffff;
+  border: 2px solid #dcdcdc;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.message-box p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  line-height: 1.6;
+}
+
+.quote-mark {
+  font-size: 2.5rem;
+  color: #d5b3a8;
+  vertical-align: middle;
+}
+
+/* Section 4: Timeline */
+.timeline-section {
+  background: inherit;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.timeline-title span {
+  color: #c8826d;
+  font-weight: 700;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #d7bcae;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 1.5rem 2rem;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item .content {
+  background: #ffffff;
+  border: 1px solid #e6d2c3;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.timeline-item .date {
+  font-weight: bold;
+  color: #c8826d;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item .message {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.timeline-item img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.left::before,
+.timeline-item.right::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  background-color: #c8826d;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -8px;
+}
+
+.timeline-item.right::before {
+  left: -8px;
+}
+
+/* Highlighted word "first" */
+.highlighted {
+  color: #c8826d;
+  font-weight: bold;
+}
+
+/* Section 5: Video */
+.video-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: inherit;
+}
+
+.video-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #1e1e1e;
+}
+
+.video-title span {
+  font-weight: 700;
+  color: #c8826d;
+  font-style: italic;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+/* Section 6: Countdown */
+/* Modern Countdown */
 .countdown-section-modern {
   padding: 4rem 2rem;
   text-align: center;
@@ -62,6 +343,7 @@ body {
   margin-top: 1rem;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   padding: 2rem;
@@ -70,3 +352,4 @@ body {
   color: #444;
   font-style: italic;
 }
+
